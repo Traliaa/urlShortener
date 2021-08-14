@@ -20,10 +20,6 @@ jobs:
     
     - name: Lint
       uses: golangci/golangci-lint-action@v2
-#       with:
-#         working-directory: internal, cmd
-
-
   
     - name: Test
       run: make test
