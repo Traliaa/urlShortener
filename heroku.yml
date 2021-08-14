@@ -3,3 +3,7 @@ build:
     web: build/Docker/Dockerfile
 run:
   web: bundle exec puma -C config/puma.rb
+  worker:
+    command:
+      - ./main
+    image: web
